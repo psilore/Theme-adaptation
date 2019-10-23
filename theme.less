@@ -1,50 +1,22 @@
-body .vngage-ui .chat-module form {
-	position: unset;
-	margin: unset;
-	padding-right: unset;
-	overflow: unset;
-  }
-  body .vngage-ui .vngage-panel-body {
-	bottom: unset;
-	display: unset;
-	left: unset;
-	position: unset;
-	top: unset;
-	width: unset;
-	z-index: unset;
-  }
-  body .vngage-ui .chat-module #chat-input {
-	-webkit-box-sizing: unset;
-	-moz-box-sizing: unset;
-	box-sizing: unset;
-	position: unset;
-	left: unset;
-	bottom: unset;
-	width: unset;
-	height: unset;
-	padding: unset;
-	overflow: unset;
-  }
-  @font-face {
-	font-family: "vngage-opensans-regular";
-	src: url("//content.psplugin.com/images/8733B8BB-49D3-4187-B9D4-719BCC78C769/fonts/vngage-opensans-regular.woff")
-	  format("woff");
+@font-face {
+	font-family: 'vngage-opensans-regular';
+	src: url('//content.psplugin.com/images/8733B8BB-49D3-4187-B9D4-719BCC78C769/fonts/vngage-opensans-regular.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
   }
   @font-face {
-	font-family: "vngage-opensans-semibold";
-	src: url("//content.psplugin.com/images/8733B8BB-49D3-4187-B9D4-719BCC78C769/fonts/vngage-opensans-semibold.woff")
-	  format("woff");
+	font-family: 'vngage-opensans-semibold';
+	src: url('//content.psplugin.com/images/8733B8BB-49D3-4187-B9D4-719BCC78C769/fonts/vngage-opensans-semibold.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
   }
   
   /* ------------ Simple changes ------------*/
   
-  @fontRegular: "vngage-opensans-regular";
-  @fontBold: "vngage-opensans-semibold";
-  @btnFontFamily: "";
+  @fontRegular:'vngage-opensans-regular';
+  @fontBold:'vngage-opensans-semibold';
+  @fontFamily:'vngage-opensans-regular';
+  @btnFontFamily:'';
   @bubbleShadow: none;
   @bubbleBorderWidth: none;
   @btnFontWeight: bold;
@@ -52,43 +24,52 @@ body .vngage-ui .chat-module form {
   @chatSendBtnBorderColor: #ffffff;
   @btnHasTextShadow: false;
   @panelBoxShadow: none;
-  @normalFont: 14px;
+  @normalFont:14px;
   
   /*Headercircle*/
   .vngageHeaderCircle {
+  
   }
   /*Queue Message*/
   .vngageQueueMessage {
+  
   }
   /*Btn Hover Color*/
   .vngageBtnHover {
+  
   }
   /*Cancel btn*/
   .vngageCancelBtn {
+  
   }
   /*Menu btn*/
   .vngageMenuBtn {
+  
   }
   /* Default Email Btn*/
   .vngageEmailBtn {
+  
   }
   /*Panel Menu*/
   .vngageMenu {
+  
   }
   /*Agent Message*/
   .vngageAgentMessage {
+  
   }
   /*Visitor Message*/
   .vngageVisitorMessage {
+  
   }
   
   /* ------------ Advanced changes ------------*/
   
   /* Shadow */
   .vngage-shadow {
-	-webkit-box-shadow: 0 0 15px 0px rgba(0, 0, 0, 0.2);
-	-moz-box-shadow: 0 0 15px 0px rgba(0, 0, 0, 0.2);
-	box-shadow: 0 0 15px 0px rgba(0, 0, 0, 0.2);
+	-webkit-box-shadow: 0 0 15px 0px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0 0 15px 0px rgba(0,0,0,0.2);
+	box-shadow: 0 0 15px 0px rgba(0,0,0,0.2);
   }
   
   /* Removes shadow */
@@ -116,23 +97,23 @@ body .vngage-ui .chat-module form {
   
   /* Menu buttons in menu and completed dialog*/
   .vngage-menu-button {
-	margin-top: 0px;
-	margin-bottom: 0px;
+	margin-top:0px;
+	margin-bottom:0px;
 	border: none;
-	border-radius: 5px;
+	border-radius:5px;
 	background: none;
 	padding: 15px;
-	width: 80%;
-	color: #343434;
-	font-family: @fontBold;
+	width:80%;
+	color:#343434;
+	font-family:@fontBold;
 	font-size: 14px;
 	font-weight: normal;
 	text-decoration: underline;
 	@media @phone {
-	  font-size: 18px;
+	  font-size:18px;
 	}
 	&:hover {
-	  background-color: #e1e1e5;
+	  background-color: #E1E1E5;
 	  .vngageBtnHover;
 	}
 	.vngageMenuBtn;
@@ -144,7 +125,7 @@ body .vngage-ui .chat-module form {
 	cursor: pointer;
 	border: none;
 	background-color: transparent;
-	background-image: url("https://content.psplugin.com//images/8733B8BB-49D3-4187-B9D4-719BCC78C769/ico_close.svg");
+	background-image: url('https://content.psplugin.com//images/8733B8BB-49D3-4187-B9D4-719BCC78C769/ico_close.svg');
 	background-repeat: no-repeat;
 	width: 18px;
 	height: 17px;
@@ -156,24 +137,24 @@ body .vngage-ui .chat-module form {
 	display: block;
 	position: fixed;
 	top: -65px;
-	transition-delay: 0.3s;
+	transition-delay: .3s;
 	background-color: #f3f3f3;
 	padding: 13.5px 2px 13.5px 2px;
 	width: 0px;
-	overflow: hidden;
-	font-family: @fontRegular;
-	font-size: 14px;
+	overflow:hidden;
+	font-family:@fontRegular;
+	font-size:14px;
 	text-align: center;
 	white-space: nowrap;
-	color: #000;
+	color:#000;
   }
   /*Hover bubble arrow*/
   .vngage-bubble-arrow-style {
 	display: block;
 	position: absolute;
-	transition-delay: 0.5s;
+	transition-delay: .5s;
 	border-style: solid;
-	border-color: transparent #f3f3f3;
+	border-color: transparent #F3F3F3;
 	width: 0;
 	height: 0;
   }
@@ -199,7 +180,7 @@ body .vngage-ui .chat-module form {
 	padding: 0;
 	padding: 12px 0px;
 	width: 120px;
-	color: #ffffff;
+	color: #FFFFFF;
 	font-family: @fontBold;
 	font-size: 14px;
 	font-weight: normal;
@@ -210,9 +191,9 @@ body .vngage-ui .chat-module form {
   
   /* Shadow for dialog box*/
   .vngage-dialog-box-shadow {
-	-moz-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
-	-webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
-	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
+	-webkit-box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
+	box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
   }
   
   /* ------------ Full Customization ------------*/
@@ -220,40 +201,32 @@ body .vngage-ui .chat-module form {
   body {
 	.vngage-ui {
 	  .vngage-panel-container {
-		&.queued,
-		&.indialog,
-		&.completed,
-		&.docked-right,
-		&.idle-right,
-		&.docked-left,
-		&.idle-left,
-		&.undocked,
-		&.dragging {
-		  border: none;
+		&.queued, &.indialog, &.completed, &.docked-right, &.idle-right, &.docked-left, &.idle-left, &.undocked, &.dragging {
+		  border:none;
 		  .vngage-dialog-box-shadow;
   
 		  /*docked Right style*/
-		  &.undocked,
-		  &.dragging {
+		  &.undocked, &.dragging {
+  
 			/* Dialog position */
 			transform: translate(0%, 0%);
 			.vngage-panel-container-inner {
 			  .vngage-panel-header {
 				.header-inner {
+  
 				  /* headercircle position */
 				  .vngage-panel-headercircle {
-					.agent,
-					.inner {
-					  top: 11px !important;
-					  left: 10px;
-					  right: 0px;
+					.agent, .inner {
+					  top:11px !important;
+					  left:10px;
+					  right:0px;
 					  .vngage-chat-bubble {
-						display: none;
+						display:none;
 					  }
 					}
 					&:before {
-					  content: none;
-					}
+					  content:none;
+					} 
 				  }
 				}
 			  }
@@ -262,33 +235,33 @@ body .vngage-ui .chat-module form {
   
 		  /*docked Right style*/
 		  &.docked-right {
+  
 			/* Dialog position */
 			transform: translate(-100%, 0%);
 			.vngage-panel-container-inner {
 			  .vngage-panel-header {
 				.header-inner {
+  
 				  /* headercircle position */
 				  .vngage-panel-headercircle {
-					.agent,
-					.inner {
-					  top: 11px !important;
-					  left: 10px;
-					  right: 0px;
+					.agent, .inner {
+					  top:11px !important;
+					  left:10px;
+					  right:0px;
 					  transition: all 0.3s ease;
 					  @media @desktop {
 						.vngage-bubble-arrow {
-						  opacity: 0;
+						  opacity:0;
 						}
 						.vngage-chat-bubble {
 						  width: 0px;
-						  overflow: hidden;
+						  overflow:hidden;
 						  visibility: hidden;
 						}
 					  }
 					  @media @phone {
-						.vngage-bubble-arrow,
-						.vngage-chat-bubble {
-						  display: none;
+						.vngage-bubble-arrow, .vngage-chat-bubble {
+						  display:none;
 						}
 					  }
 					}
@@ -299,18 +272,19 @@ body .vngage-ui .chat-module form {
 		  }
 		  /*Idle Right style*/
 		  &.idle-right {
+  
 			/* Dialog position */
-			right: auto;
+			right:auto;
 			transform: translate(0%, 100%) !important;
 			.vngage-panel-container-inner {
 			  .vngage-panel-header {
 				.header-inner {
+  
 				  /* headercircle position */
 				  .vngage-panel-headercircle {
-					.agent,
-					.inner {
-					  top: -84px !important;
-					  left: -84px;
+					.agent, .inner {
+					  top:-84px !important;
+					  left:-84px;
 					  transition: all 0.1s ease;
   
 					  @media @desktop {
@@ -319,13 +293,13 @@ body .vngage-ui .chat-module form {
 						  left: auto;
 						  right: 428px;
 						  border-width: 13.5px 0 13.5px 13.5px;
-						  opacity: 0;
+						  opacity:0;
 						  .vngage-bubble-arrow-style;
 						  .vngage-fast-animation;
 						}
 						.vngage-chat-bubble {
 						  .vngage-chat-bubble-style;
-						  left: auto;
+						  left:auto;
 						  right: 450px;
 						  visibility: hidden;
 						  .vngage-fast-animation;
@@ -333,17 +307,16 @@ body .vngage-ui .chat-module form {
 					  }
 					  &:hover {
 						.vngage-bubble-arrow {
-						  opacity: 1;
+						  opacity:1;
 						}
 						.vngage-chat-bubble {
-						  width: 82px;
+						  width:82px;
 						  visibility: visible;
 						}
 					  }
 					  @media @phone {
-						.vngage-bubble-arrow,
-						.vngage-chat-bubble {
-						  display: none;
+						.vngage-bubble-arrow, .vngage-chat-bubble {
+						  display:none;
 						}
 					  }
 					}
@@ -359,20 +332,21 @@ body .vngage-ui .chat-module form {
 		  }
 		  /*Idle Left style*/
 		  &.idle-left {
+  
 			/* Dialog position */
-			right: auto;
+			right:auto;
 			transform: translate(-100%, 100%);
 			.vngage-panel-container-inner {
 			  .vngage-panel-header {
 				.header-inner {
+  
 				  /* headercircle position */
 				  .vngage-panel-headercircle {
-					.agent,
-					.inner {
+					.agent, .inner {
 					  top: -84px !important;
 					  right: -114px;
 					  left: auto;
-					  transition: all 0.1s ease;
+					  transition: all .1s ease;
 					  @media @desktop {
 						.vngage-bubble-arrow {
 						  .vngage-bubble-arrow-style;
@@ -381,7 +355,7 @@ body .vngage-ui .chat-module form {
 						  left: 425px;
 						  top: -84px;
 						  border-width: 13.5px 0 13.5px 13.5px;
-						  opacity: 0;
+						  opacity:0;
 						}
 						.vngage-chat-bubble {
 						  .vngage-chat-bubble-style;
@@ -393,17 +367,16 @@ body .vngage-ui .chat-module form {
 						}
 						&:hover {
 						  .vngage-bubble-arrow {
-							opacity: 1;
+							opacity:1;
 						  }
 						  .vngage-chat-bubble {
-							width: 82px;
+							width:82px;
 							visibility: visible;
 						  }
 						}
 						@media @phone {
-						  .vngage-bubble-arrow,
-						  .vngage-chat-bubble {
-							display: none;
+						  .vngage-bubble-arrow, .vngage-chat-bubble {
+							display:none;
 						  }
 						}
 					  }
@@ -422,34 +395,32 @@ body .vngage-ui .chat-module form {
 		  &.docked-left {
 			/* Dialog position */
 			transform: translate(0%, 0%);
-			right: auto;
+			right:auto;
 			.vngage-panel-container-inner {
 			  .vngage-panel-header {
 				.header-inner {
 				  /* headercircle position */
 				  .vngage-panel-headercircle {
-					.agent,
-					.inner {
-					  transition: all 0.3s ease;
-					  top: 11px !important;
-					  left: 10px;
-					  right: 0px;
+					.agent, .inner {
+					  transition: all .3s ease;
+					  top:11px !important;
+					  left:10px;
+					  right:0px;
 					  @media @desktop {
 						.vngage-bubble-arrow {
-						  opacity: 0;
-						  display: none;
+						  opacity:0;
+						  display:none;
 						}
 						.vngage-chat-bubble {
-						  display: none;
+						  display:none;
 						  width: 0px;
-						  overflow: hidden;
+						  overflow:hidden;
 						  visibility: hidden;
 						}
 					  }
 					  @media @phone {
-						.vngage-bubble-arrow,
-						.vngage-chat-bubble {
-						  display: none;
+						.vngage-bubble-arrow, .vngage-chat-bubble {
+						  display:none;
 						}
 					  }
 					}
@@ -466,8 +437,8 @@ body .vngage-ui .chat-module form {
 				  .handler-message {
 					&.message {
 					  h5 {
-						display: none;
-						font-weight: normal;
+						display:none;
+						font-weight:normal;
 					  }
 					}
 				  }
@@ -505,21 +476,21 @@ body .vngage-ui .chat-module form {
 		  /*------------------------------------------------------*/
 		  .vngage-panel-container-inner {
 			.vngage-no-shadow;
-			top: 0px !important;
+			top:0px !important;
 			/* Top shadow shown in phone */
 			.vngage-topclose {
-			  display: none;
+			  display:none;
 			}
   
 			/* Header content*/
 			.vngage-panel-header {
-			  border: none;
-			  z-index: 2;
+			  border:none;
+			  z-index:2;
 			  .vngage-no-shadow;
 			  .header-inner {
 				/* Queue top image */
 				.vngage-panel-headerimage {
-				  display: none;
+				  display:none;
 				  img {
 				  }
 				}
@@ -528,17 +499,17 @@ body .vngage-ui .chat-module form {
 					text-shadow: none;
 					width: 100%;
 					text-align: center;
-					left: 0px;
+					left:0px;
   
 					/* Text in header during dialog*/
 					span {
-					  font-size: 14px;
+					  font-size:14px;
 					  display: block;
 					  margin-top: 8px;
 					}
 					/* Queue message & Agent name in header during dialog */
 					h5 {
-					  display: none;
+					  display:none;
 					}
 				  }
 				}
@@ -548,7 +519,7 @@ body .vngage-ui .chat-module form {
 				  right: 0px;
 				  top: 0px;
 				  .vngage-icon-menu {
-					background-image: url("https://content.psplugin.com//images/8733B8BB-49D3-4187-B9D4-719BCC78C769/ico_menu.svg");
+					background-image: url('https://content.psplugin.com//images/8733B8BB-49D3-4187-B9D4-719BCC78C769/ico_menu.svg');
 					background-size: 28px 28px;
 					width: 30px;
 					height: 38px;
@@ -556,14 +527,14 @@ body .vngage-ui .chat-module form {
 					margin: 0px 0px 0px 0px;
 					background-position: center;
 					&:before {
-					  content: none;
+					  content:none;
 					}
 				  }
 				}
 				/* Indialog headercircle toggle btn*/
 				.vngage-panel-headercircle {
-				  background: none;
-				  border: none;
+				  background:none;
+				  border:none;
 				  border-radius: 0px;
 				  width: 92%;
 				  height: 41px;
@@ -571,8 +542,8 @@ body .vngage-ui .chat-module form {
 				  top: -1px !important;
 				  cursor: pointer;
 				  &:before {
-					content: "";
-					background-image: url("https://content.psplugin.com//images/8733B8BB-49D3-4187-B9D4-719BCC78C769/ico_arrow.svg");
+					content: '';
+					background-image: url('https://content.psplugin.com//images/8733B8BB-49D3-4187-B9D4-719BCC78C769/ico_arrow.svg');
 					background-repeat: no-repeat;
 					background-position: center;
 					width: 18px;
@@ -585,23 +556,23 @@ body .vngage-ui .chat-module form {
 				  /* Indialog and completed headercircle toggle button*/
 				  .agent {
 					transition: all 0.3s ease-in-out;
-					background-color: #ffffff;
-					width: 60px;
-					height: 60px;
-					position: absolute;
-					z-index: 4;
+					background-color:#ffffff;
+					width:60px;
+					height:60px;
+					position:absolute;
+					z-index:4;
 					.vngage-shadow;
 				  }
 				  /* Queued headercircle toggle btn */
 				  .inner {
-					background-image: url("https://content.psplugin.com//images/8733B8BB-49D3-4187-B9D4-719BCC78C769/ico_chat.svg");
+					background-image: url('https://content.psplugin.com//images/8733B8BB-49D3-4187-B9D4-719BCC78C769/ico_chat.svg');
 					background-size: 30px;
 					background-position: 50%;
 					background-repeat: no-repeat;
 					width: 60px;
 					height: 60px;
-					position: absolute;
-					border-radius: 100%;
+					position:absolute;
+					border-radius:100%;
 					background-color: #2b7fa8;
 					.vngage-shadow;
 					.vngageHeaderCircle;
@@ -624,7 +595,7 @@ body .vngage-ui .chat-module form {
 						font-weight: normal;
 						line-height: 0px;
 						left: 54px;
-						display: none;
+						display:none;
 					  }
 					  /* Queue text */
 					  .vngage-queue-title {
@@ -645,19 +616,19 @@ body .vngage-ui .chat-module form {
   
 			/* Menu content */
 			.vngage-panel-menu {
-			  top: 0px;
+			  top:0px;
 			  .list {
 				padding-top: 40px;
 				background-color: #f3f3f3;
 				.vngageMenu;
 				li {
-				  margin: 0px;
+				  margin:0px;
 				  &:before {
-					content: none;
+					content:none;
 				  }
 				}
 				&:before {
-				  content: " ";
+				  content: ' ';
 				  .vngage-image-cancel-btn;
 				  right: 12px;
 				  top: 12px;
@@ -666,7 +637,7 @@ body .vngage-ui .chat-module form {
 				  .vngage-menu-button;
 				  .vngage-no-shadow;
 				  &.vngage-btn-cancel {
-					color: #ba3f3f;
+					color:#ba3f3f;
 					.vngageCancelBtn;
 				  }
 				}
@@ -676,39 +647,33 @@ body .vngage-ui .chat-module form {
 			/* Body content */
 			.vngage-panel-body {
 			  /* Queue body */
-			  position: absolute;
-			  top: 48px;
-			  bottom: 0;
-			  width: 100%;
-			  padding: 0;
-			  box-sizing: border-box;
 			  .vngage-inner-fullheight {
 				.vngage-panel-chat-container {
 				  .vngage-chat-list {
 					.user {
 					  &.server {
 						font-family: @fontRegular;
-						border: none;
+						border:none;
 						padding: 12px 15px 12px 15px;
-						position: relative;
+						position:relative;
 						top: 34px;
-						font-size: 14px;
+						font-size:14px;
 						text-align: left;
-						line-height: 20px;
+						line-height:20px;
 						margin: 7px 50px 10px 12px;
 						width: 280px;
-						border-radius: 5px;
-						font-size: 14px;
-						letter-spacing: normal;
+						border-radius:5px;
+						font-size:14px;
+						letter-spacing:normal;
 						background-color: #e1edfe;
 						.vngageQueueMessage;
 						/* Queue hide btn*/
 						#btn-hide {
-						  display: none !important;
+						  display:none !important;
 						}
 						span {
-						  font-size: 14px;
-						  letter-spacing: normal;
+						  font-size:14px;
+						  letter-spacing:normal;
 						  font-family: @fontRegular;
 						}
 						.vngage-queue-info {
@@ -734,8 +699,8 @@ body .vngage-ui .chat-module form {
 							color: #7f7f7f;
 							display: block;
 							width: auto;
-							margin-left: 2px;
-							height: 0px;
+							margin-left:2px;
+							height:0px;
 							@media @phone {
 							  top: 22px;
 							  right: 66px;
@@ -746,8 +711,8 @@ body .vngage-ui .chat-module form {
 					}
 				  }
 				  &:after {
-					content: "";
-					background-image: url("https://content.psplugin.com/images/8733B8BB-49D3-4187-B9D4-719BCC78C769/ani_progress_ring.gif");
+					content: '';
+					background-image: url('https://content.psplugin.com/images/8733B8BB-49D3-4187-B9D4-719BCC78C769/ani_progress_ring.gif');
 					background-repeat: no-repeat;
 					display: block;
 					background-size: 22px;
@@ -760,7 +725,7 @@ body .vngage-ui .chat-module form {
 				  }
 				}
 				&:after {
-				  content: "";
+				  content: '';
 				  position: absolute;
 				  width: 100%;
 				  height: 80px;
@@ -774,25 +739,24 @@ body .vngage-ui .chat-module form {
 			  .chat-module {
 				.vngage-chat-list {
 				  &.videomode {
-					top: 227px;
+					top:227px;
 				  }
-				  bottom: 80px;
+				  bottom:80px;
 				  .user {
-					border-radius: 5px;
-					margin: 7px 90px 10px 10px;
+					border-radius:5px;
+					margin: 7px 90px  10px 10px;
 					padding: 8px 14px;
-					border: none;
+					border:none;
 					font-family: @fontRegular;
-					font-size: 14px;
-					letter-spacing: normal;
+					font-size:14px;
+					letter-spacing:normal;
 					background-color: #e1edfe;
 					.vngageAgentMessage;
 					strong {
 					  font-family: @fontBold;
-					  font-size: 14px;
+					  font-size:14px;
 					}
-					.dialog-navigate,
-					a {
+					.dialog-navigate, a {
 					  font-family: @fontRegular;
 					  background: none;
 					  border: none;
@@ -805,28 +769,28 @@ body .vngage-ui .chat-module form {
 					}
 				  }
 				  .user:first-child {
-					margin-top: 34px;
+					margin-top:34px;
 				  }
 				  .visitor {
-					border-radius: 5px;
-					margin: 7px 10px 10px 90px;
+					border-radius:5px;
+					margin: 7px 10px  10px 90px;
 					padding: 8px 14px;
-					border: none;
+					border:none;
 					font-family: @fontRegular;
-					font-size: 14px;
-					letter-spacing: normal;
-					background-color: #f3f3f3;
+					font-size:14px;
+					letter-spacing:normal;
+					background-color:#f3f3f3;
 					.vngageVisitorMessage;
 					strong {
 					  font-family: @fontBold;
-					  font-size: 14px;
+					  font-size:14px;
 					}
 				  }
 				  li {
 					margin: 7px 10px 0 0px;
 					padding: 8px 0px;
 					.user-typing {
-					  background-image: url("https://content.psplugin.com//images/8733B8BB-49D3-4187-B9D4-719BCC78C769/ani_typing.gif");
+					  background-image: url('https://content.psplugin.com//images/8733B8BB-49D3-4187-B9D4-719BCC78C769/ani_typing.gif');
 					  width: 100%;
 					  height: 0px;
 					  background-size: 70px 70px;
@@ -839,7 +803,7 @@ body .vngage-ui .chat-module form {
 					  .vngage-menu-button;
 					  .vngage-no-shadow;
 					  &.vngage-btn-cancel {
-						color: #ba3f3f;
+						color:#ba3f3f;
 						.vngageCancelBtn;
 					  }
 					}
@@ -850,100 +814,37 @@ body .vngage-ui .chat-module form {
 				  background: transparent !important;
 				}
 				#chat-input {
-				  display: -webkit-box;
-				  display: -ms-flexbox;
-				  display: -webkit-flex;
-				  display: flex;
-				  position: absolute;
-				  bottom: 0;
-				  width: 100%;
-				  padding-top: 0px;
-				  padding-bottom: 0px;
-				  box-sizing: border-box;
-				  padding-left: 0px;
-				  padding-right: 0px;
-  
-				  height: 80px;
+				  height:80px;
 				  border-top: 1px solid #ccc;
 				  form {
-					flex-direction: row;
-					display: -webkit-box;
-					display: -ms-flexbox;
-					display: -webkit-flex;
-					display: flex;
-					width: 100%;
-					height: 80px;
-					/* height: 70px; */
-					.chat-textarea-container {
-					  display: -webkit-box;
-					  display: -ms-flexbox;
-					  display: -webkit-flex;
-					  display: flex;
-					  justify-content: space-between;
-					  flex-direction: row;
-					  width: 100%;
-					  flex: 2;
-					}
+					height:70px;
 					.chat-textarea {
-					  font-family: @fontRegular;
-					  padding: 11px 10px 0 10px;
-					  font-size: 16px;
-					  flex: 2;
-					  height: 80px;
-					  /* padding: 6px 10px 0px 10px; */
-					  /* font-size: 14px; */
-					  /* height: 70px; */
+					  padding: 6px 10px 0px 10px;
+					  font-size:14px;
+					  height:70px;
 					  .vngage-no-shadow;
-					  &::-webkit-input-placeholder {
-						font-family: @fontRegular;
-						font-size: 16px;
-						font-style: normal;
-						color:    #2D2926;
-					  }
-					  &::-moz-placeholder {
-						font-family: @fontRegular;
-						font-size: 16px;
-						font-style: normal;
-						color:    #2D2926;
-					  }
-					  &:-ms-input-placeholder {
-						font-family: @fontRegular;
-						font-size: 16px;
-						font-style: normal;
-						color:    #2D2926;
-					  }
-					  &:-moz-placeholder {
-						font-family: @fontRegular;
-						font-size: 16px;
-						font-style: normal;
-						color:    #2D2926;
-					  }
 					}
-					.wdt-emoji-picker {
-					  background-image: url(https://content.psplugin.com/images/01F78FC3-1DF9-4937-9865-E2C433BE33D9/emoji-picker-mongrel-icon.svg) !important;
-					  height: 48px;
-					  background-color: #F9F9F9;
-					  border-radius: 24px;
-					  background-size: 32px;
-					  width: 48px;
-					  border: 0;
-					  display: block;
-					  margin-left: 10px;
-					  margin-right: 5px;
-					  border-right: 1px solid #F2F2F2;
-					  /* &.wdt-emoji-picker-open {}*/ 
+					.chat-textarea::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+					  font-style:normal;
+					}
+					.chat-textarea::-moz-placeholder { /* Firefox 19+ */
+					  font-style:normal;
+					}
+					.chat-textarea:-ms-input-placeholder { /* IE 10+ */
+					  font-style:normal;
+					}
+					.chat-textarea:-moz-placeholder { /* Firefox 18- */
+					  font-style:normal;
 					}
 					/* Indialog send button */
 					.chat-send-button {
-					  border: none;
-					  height: 80px;
+					  border:none;
+					  height:70px;
 					  @media @desktop {
 						/* Will only read in desktop until ios but is fixed click*/
-						&:hover,
-						&:active,
-						&:focus {
-						  border: none;
-						  background: none;
+						&:hover, &:active, &:focus {
+						  border:none;
+						  background:none;
 						}
 					  }
 					  .vngage-icon-ok {
@@ -951,7 +852,7 @@ body .vngage-ui .chat-module form {
 						width: 100%;
 						height: 100%;
 						background-repeat: no-repeat;
-						background-position: center;
+						background-position:center;
 						.vngage-default-animation;
 						@media @desktop {
 						  /* Will only read in desktop until ios but is fixed click*/
@@ -960,13 +861,15 @@ body .vngage-ui .chat-module form {
 							.vngage-default-animation;
 						  }
 						}
+  
 						&:before {
-						  content: none;
+						  content:none;
 						}
 					  }
 					}
 				  }
 				}
+  
 			  }
 			}
 			/* Power by vergic footer*/
@@ -975,8 +878,8 @@ body .vngage-ui .chat-module form {
 			  text-align: center;
 			  right: auto;
 			  line-height: 10px;
-			  bottom: 2px;
-			  line-height: 10px;
+			  bottom:2px;
+			  line-height:10px;
 			}
 		  }
 		  .vngage-modal-container {
@@ -990,10 +893,10 @@ body .vngage-ui .chat-module form {
 				  /* Resumes dialog in another tab*/
 				  .dialog-tokenmismatch {
 					h3 {
-					  color: #000000;
+					  color:#000000;
 					}
 					p {
-					  color: #000000;
+					  color:#000000;
 					}
 					.vngage-btn-group {
 					  .vngage-btn-success {
@@ -1005,13 +908,12 @@ body .vngage-ui .chat-module form {
 					#dialog-email-form {
 					  .form-group {
 						h3 {
-						  color: #000000;
+						  color:#000000;
 						}
 						/* Email Input field*/
-						.form-control {
-						}
+						.form-control {}
 						.dialog-email {
-						  background-color: #ba3f3f;
+						  background-color:#ba3f3f;
 						}
 					  }
 					  .vngage-btn-group {
@@ -1027,15 +929,15 @@ body .vngage-ui .chat-module form {
 					}
 					#dialog-emailsent-success {
 					  h3 {
-						color: #343434;
-						font-size: 14px;
+						color:#343434;;
+						font-size:14px;
 					  }
 					  .dialog-email-close {
 						.vngage-menu-button;
 						.vngage-no-shadow;
 						padding: 0px;
 						margin-bottom: 26px;
-						color: #ba3f3f;
+						color:#ba3f3f;
 					  }
 					}
 				  }
@@ -1044,6 +946,7 @@ body .vngage-ui .chat-module form {
 			}
 		  }
 		}
-	  }
+	  } 
 	}
   }
+  
