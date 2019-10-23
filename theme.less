@@ -1,0 +1,1049 @@
+body .vngage-ui .chat-module form {
+	position: unset;
+	margin: unset;
+	padding-right: unset;
+	overflow: unset;
+  }
+  body .vngage-ui .vngage-panel-body {
+	bottom: unset;
+	display: unset;
+	left: unset;
+	position: unset;
+	top: unset;
+	width: unset;
+	z-index: unset;
+  }
+  body .vngage-ui .chat-module #chat-input {
+	-webkit-box-sizing: unset;
+	-moz-box-sizing: unset;
+	box-sizing: unset;
+	position: unset;
+	left: unset;
+	bottom: unset;
+	width: unset;
+	height: unset;
+	padding: unset;
+	overflow: unset;
+  }
+  @font-face {
+	font-family: "vngage-opensans-regular";
+	src: url("//content.psplugin.com/images/8733B8BB-49D3-4187-B9D4-719BCC78C769/fonts/vngage-opensans-regular.woff")
+	  format("woff");
+	font-weight: normal;
+	font-style: normal;
+  }
+  @font-face {
+	font-family: "vngage-opensans-semibold";
+	src: url("//content.psplugin.com/images/8733B8BB-49D3-4187-B9D4-719BCC78C769/fonts/vngage-opensans-semibold.woff")
+	  format("woff");
+	font-weight: normal;
+	font-style: normal;
+  }
+  
+  /* ------------ Simple changes ------------*/
+  
+  @fontRegular: "vngage-opensans-regular";
+  @fontBold: "vngage-opensans-semibold";
+  @btnFontFamily: "";
+  @bubbleShadow: none;
+  @bubbleBorderWidth: none;
+  @btnFontWeight: bold;
+  @chatSendBtnBgColor: #ffffff;
+  @chatSendBtnBorderColor: #ffffff;
+  @btnHasTextShadow: false;
+  @panelBoxShadow: none;
+  @normalFont: 14px;
+  
+  /*Headercircle*/
+  .vngageHeaderCircle {
+  }
+  /*Queue Message*/
+  .vngageQueueMessage {
+  }
+  /*Btn Hover Color*/
+  .vngageBtnHover {
+  }
+  /*Cancel btn*/
+  .vngageCancelBtn {
+  }
+  /*Menu btn*/
+  .vngageMenuBtn {
+  }
+  /* Default Email Btn*/
+  .vngageEmailBtn {
+  }
+  /*Panel Menu*/
+  .vngageMenu {
+  }
+  /*Agent Message*/
+  .vngageAgentMessage {
+  }
+  /*Visitor Message*/
+  .vngageVisitorMessage {
+  }
+  
+  /* ------------ Advanced changes ------------*/
+  
+  /* Shadow */
+  .vngage-shadow {
+	-webkit-box-shadow: 0 0 15px 0px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: 0 0 15px 0px rgba(0, 0, 0, 0.2);
+	box-shadow: 0 0 15px 0px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Removes shadow */
+  .vngage-no-shadow {
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	-webkit-appearance: none;
+	box-shadow: none;
+  }
+  
+  /* Transition animation */
+  .vngage-default-animation {
+	-webkit-transition: all 0.45s ease-in-out;
+	-moz-transition: all 0.45s ease-in-out;
+	-o-transition: all 0.45s ease-in-out;
+	transition: all 0.45s ease-in-out;
+  }
+  /* Transition animation */
+  .vngage-fast-animation {
+	-webkit-transition: all 0.25s ease-in-out;
+	-moz-transition: all 0.25s ease-in-out;
+	-o-transition: all 0.25s ease-in-out;
+	transition: all 0.25s ease-in-out;
+  }
+  
+  /* Menu buttons in menu and completed dialog*/
+  .vngage-menu-button {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	border: none;
+	border-radius: 5px;
+	background: none;
+	padding: 15px;
+	width: 80%;
+	color: #343434;
+	font-family: @fontBold;
+	font-size: 14px;
+	font-weight: normal;
+	text-decoration: underline;
+	@media @phone {
+	  font-size: 18px;
+	}
+	&:hover {
+	  background-color: #e1e1e5;
+	  .vngageBtnHover;
+	}
+	.vngageMenuBtn;
+  }
+  /* Close button*/
+  .vngage-image-cancel-btn {
+	display: block;
+	position: absolute;
+	cursor: pointer;
+	border: none;
+	background-color: transparent;
+	background-image: url("https://content.psplugin.com//images/8733B8BB-49D3-4187-B9D4-719BCC78C769/ico_close.svg");
+	background-repeat: no-repeat;
+	width: 18px;
+	height: 17px;
+	text-indent: 100%;
+  }
+  
+  /*Hover chat bubble*/
+  .vngage-chat-bubble-style {
+	display: block;
+	position: fixed;
+	top: -65px;
+	transition-delay: 0.3s;
+	background-color: #f3f3f3;
+	padding: 13.5px 2px 13.5px 2px;
+	width: 0px;
+	overflow: hidden;
+	font-family: @fontRegular;
+	font-size: 14px;
+	text-align: center;
+	white-space: nowrap;
+	color: #000;
+  }
+  /*Hover bubble arrow*/
+  .vngage-bubble-arrow-style {
+	display: block;
+	position: absolute;
+	transition-delay: 0.5s;
+	border-style: solid;
+	border-color: transparent #f3f3f3;
+	width: 0;
+	height: 0;
+  }
+  
+  /*Unread message indicator*/
+  .vngage-unread-msg {
+	z-index: 4;
+	border: none;
+	background-color: #ba3f3f;
+	padding: 0px 7px;
+	width: auto;
+	height: auto;
+	line-height: 20px;
+	text-align: center;
+	.vngage-no-shadow;
+  }
+  
+  .vngage-default-btn {
+	margin-bottom: 26px;
+	border: none;
+	border-radius: 4px;
+	background: #343434;
+	padding: 0;
+	padding: 12px 0px;
+	width: 120px;
+	color: #ffffff;
+	font-family: @fontBold;
+	font-size: 14px;
+	font-weight: normal;
+	text-decoration: none;
+	.vngage-no-shadow;
+	.vngageEmailBtn;
+  }
+  
+  /* Shadow for dialog box*/
+  .vngage-dialog-box-shadow {
+	-moz-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+	-webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  /* ------------ Full Customization ------------*/
+  
+  body {
+	.vngage-ui {
+	  .vngage-panel-container {
+		&.queued,
+		&.indialog,
+		&.completed,
+		&.docked-right,
+		&.idle-right,
+		&.docked-left,
+		&.idle-left,
+		&.undocked,
+		&.dragging {
+		  border: none;
+		  .vngage-dialog-box-shadow;
+  
+		  /*docked Right style*/
+		  &.undocked,
+		  &.dragging {
+			/* Dialog position */
+			transform: translate(0%, 0%);
+			.vngage-panel-container-inner {
+			  .vngage-panel-header {
+				.header-inner {
+				  /* headercircle position */
+				  .vngage-panel-headercircle {
+					.agent,
+					.inner {
+					  top: 11px !important;
+					  left: 10px;
+					  right: 0px;
+					  .vngage-chat-bubble {
+						display: none;
+					  }
+					}
+					&:before {
+					  content: none;
+					}
+				  }
+				}
+			  }
+			}
+		  }
+  
+		  /*docked Right style*/
+		  &.docked-right {
+			/* Dialog position */
+			transform: translate(-100%, 0%);
+			.vngage-panel-container-inner {
+			  .vngage-panel-header {
+				.header-inner {
+				  /* headercircle position */
+				  .vngage-panel-headercircle {
+					.agent,
+					.inner {
+					  top: 11px !important;
+					  left: 10px;
+					  right: 0px;
+					  transition: all 0.3s ease;
+					  @media @desktop {
+						.vngage-bubble-arrow {
+						  opacity: 0;
+						}
+						.vngage-chat-bubble {
+						  width: 0px;
+						  overflow: hidden;
+						  visibility: hidden;
+						}
+					  }
+					  @media @phone {
+						.vngage-bubble-arrow,
+						.vngage-chat-bubble {
+						  display: none;
+						}
+					  }
+					}
+				  }
+				}
+			  }
+			}
+		  }
+		  /*Idle Right style*/
+		  &.idle-right {
+			/* Dialog position */
+			right: auto;
+			transform: translate(0%, 100%) !important;
+			.vngage-panel-container-inner {
+			  .vngage-panel-header {
+				.header-inner {
+				  /* headercircle position */
+				  .vngage-panel-headercircle {
+					.agent,
+					.inner {
+					  top: -84px !important;
+					  left: -84px;
+					  transition: all 0.1s ease;
+  
+					  @media @desktop {
+						.vngage-bubble-arrow {
+						  top: -84px;
+						  left: auto;
+						  right: 428px;
+						  border-width: 13.5px 0 13.5px 13.5px;
+						  opacity: 0;
+						  .vngage-bubble-arrow-style;
+						  .vngage-fast-animation;
+						}
+						.vngage-chat-bubble {
+						  .vngage-chat-bubble-style;
+						  left: auto;
+						  right: 450px;
+						  visibility: hidden;
+						  .vngage-fast-animation;
+						}
+					  }
+					  &:hover {
+						.vngage-bubble-arrow {
+						  opacity: 1;
+						}
+						.vngage-chat-bubble {
+						  width: 82px;
+						  visibility: visible;
+						}
+					  }
+					  @media @phone {
+						.vngage-bubble-arrow,
+						.vngage-chat-bubble {
+						  display: none;
+						}
+					  }
+					}
+					#indicator-unreadmsg {
+					  top: -86px;
+					  left: -92px;
+					  .vngage-unread-msg;
+					}
+				  }
+				}
+			  }
+			}
+		  }
+		  /*Idle Left style*/
+		  &.idle-left {
+			/* Dialog position */
+			right: auto;
+			transform: translate(-100%, 100%);
+			.vngage-panel-container-inner {
+			  .vngage-panel-header {
+				.header-inner {
+				  /* headercircle position */
+				  .vngage-panel-headercircle {
+					.agent,
+					.inner {
+					  top: -84px !important;
+					  right: -114px;
+					  left: auto;
+					  transition: all 0.1s ease;
+					  @media @desktop {
+						.vngage-bubble-arrow {
+						  .vngage-bubble-arrow-style;
+						  .vngage-fast-animation;
+						  transform: rotate(180deg);
+						  left: 425px;
+						  top: -84px;
+						  border-width: 13.5px 0 13.5px 13.5px;
+						  opacity: 0;
+						}
+						.vngage-chat-bubble {
+						  .vngage-chat-bubble-style;
+						  .vngage-fast-animation;
+						  top: -65px;
+						  right: auto;
+						  left: 456px;
+						  visibility: hidden;
+						}
+						&:hover {
+						  .vngage-bubble-arrow {
+							opacity: 1;
+						  }
+						  .vngage-chat-bubble {
+							width: 82px;
+							visibility: visible;
+						  }
+						}
+						@media @phone {
+						  .vngage-bubble-arrow,
+						  .vngage-chat-bubble {
+							display: none;
+						  }
+						}
+					  }
+					}
+					#indicator-unreadmsg {
+					  .vngage-unread-msg;
+					  top: -86px;
+					  right: -122px;
+					}
+				  }
+				}
+			  }
+			}
+		  }
+		  /* docked left style  */
+		  &.docked-left {
+			/* Dialog position */
+			transform: translate(0%, 0%);
+			right: auto;
+			.vngage-panel-container-inner {
+			  .vngage-panel-header {
+				.header-inner {
+				  /* headercircle position */
+				  .vngage-panel-headercircle {
+					.agent,
+					.inner {
+					  transition: all 0.3s ease;
+					  top: 11px !important;
+					  left: 10px;
+					  right: 0px;
+					  @media @desktop {
+						.vngage-bubble-arrow {
+						  opacity: 0;
+						  display: none;
+						}
+						.vngage-chat-bubble {
+						  display: none;
+						  width: 0px;
+						  overflow: hidden;
+						  visibility: hidden;
+						}
+					  }
+					  @media @phone {
+						.vngage-bubble-arrow,
+						.vngage-chat-bubble {
+						  display: none;
+						}
+					  }
+					}
+				  }
+				}
+			  }
+			}
+		  }
+		  /* queued headercircle  */
+		  &.queued {
+			.vngage-panel-container-inner {
+			  .vngage-panel-header {
+				.header-inner {
+				  .handler-message {
+					&.message {
+					  h5 {
+						display: none;
+						font-weight: normal;
+					  }
+					}
+				  }
+				}
+			  }
+			}
+		  }
+		  /* REMOVE IF NOT IN USE*/
+		  &.indialog {
+			.vngage-panel-container-inner {
+			  .vngage-poweredby {
+				/*    display:none; */
+			  }
+			}
+		  }
+		  &.completed {
+			.vngage-panel-container-inner {
+			  .vngage-panel-body {
+				.chat-module {
+				  &.disabled {
+					.vngage-chat-list {
+					  bottom: 0px;
+					  .dialog-completedmessage {
+						/* Complete dialog buttons */
+						.menubutton {
+						  .vngage-menu-button;
+						}
+					  }
+					}
+				  }
+				}
+			  }
+			}
+		  }
+		  /*------------------------------------------------------*/
+		  .vngage-panel-container-inner {
+			.vngage-no-shadow;
+			top: 0px !important;
+			/* Top shadow shown in phone */
+			.vngage-topclose {
+			  display: none;
+			}
+  
+			/* Header content*/
+			.vngage-panel-header {
+			  border: none;
+			  z-index: 2;
+			  .vngage-no-shadow;
+			  .header-inner {
+				/* Queue top image */
+				.vngage-panel-headerimage {
+				  display: none;
+				  img {
+				  }
+				}
+				.handler-message {
+				  &.message {
+					text-shadow: none;
+					width: 100%;
+					text-align: center;
+					left: 0px;
+  
+					/* Text in header during dialog*/
+					span {
+					  font-size: 14px;
+					  display: block;
+					  margin-top: 8px;
+					}
+					/* Queue message & Agent name in header during dialog */
+					h5 {
+					  display: none;
+					}
+				  }
+				}
+				/* Menu icon */
+				.vngage-dialog-toolbar {
+				  position: absolute;
+				  right: 0px;
+				  top: 0px;
+				  .vngage-icon-menu {
+					background-image: url("https://content.psplugin.com//images/8733B8BB-49D3-4187-B9D4-719BCC78C769/ico_menu.svg");
+					background-size: 28px 28px;
+					width: 30px;
+					height: 38px;
+					background-repeat: no-repeat;
+					margin: 0px 0px 0px 0px;
+					background-position: center;
+					&:before {
+					  content: none;
+					}
+				  }
+				}
+				/* Indialog headercircle toggle btn*/
+				.vngage-panel-headercircle {
+				  background: none;
+				  border: none;
+				  border-radius: 0px;
+				  width: 92%;
+				  height: 41px;
+				  left: 0px;
+				  top: -1px !important;
+				  cursor: pointer;
+				  &:before {
+					content: "";
+					background-image: url("https://content.psplugin.com//images/8733B8BB-49D3-4187-B9D4-719BCC78C769/ico_arrow.svg");
+					background-repeat: no-repeat;
+					background-position: center;
+					width: 18px;
+					height: 12px;
+					position: absolute;
+					left: auto;
+					right: 8px;
+					top: 10px;
+				  }
+				  /* Indialog and completed headercircle toggle button*/
+				  .agent {
+					transition: all 0.3s ease-in-out;
+					background-color: #ffffff;
+					width: 60px;
+					height: 60px;
+					position: absolute;
+					z-index: 4;
+					.vngage-shadow;
+				  }
+				  /* Queued headercircle toggle btn */
+				  .inner {
+					background-image: url("https://content.psplugin.com//images/8733B8BB-49D3-4187-B9D4-719BCC78C769/ico_chat.svg");
+					background-size: 30px;
+					background-position: 50%;
+					background-repeat: no-repeat;
+					width: 60px;
+					height: 60px;
+					position: absolute;
+					border-radius: 100%;
+					background-color: #2b7fa8;
+					.vngage-shadow;
+					.vngageHeaderCircle;
+					/* Queue info */
+					.vngage-queue-info {
+					  width: 92%;
+					  height: 20px;
+					  position: fixed;
+					  display: block;
+					  vertical-align: middle;
+					  top: 9px;
+					  left: 0px;
+					  /* Queue number */
+					  #inqueue-display {
+						position: relative;
+						top: 10px;
+						left: auto;
+						color: #fff;
+						font-size: 14px;
+						font-weight: normal;
+						line-height: 0px;
+						left: 54px;
+						display: none;
+					  }
+					  /* Queue text */
+					  .vngage-queue-title {
+						position: relative;
+						top: 13px;
+						left: 6%;
+						width: 100%;
+						color: #fff;
+						font-size: 14px;
+						font-weight: normal;
+						line-height: 0px;
+					  }
+					}
+				  }
+				}
+			  }
+			}
+  
+			/* Menu content */
+			.vngage-panel-menu {
+			  top: 0px;
+			  .list {
+				padding-top: 40px;
+				background-color: #f3f3f3;
+				.vngageMenu;
+				li {
+				  margin: 0px;
+				  &:before {
+					content: none;
+				  }
+				}
+				&:before {
+				  content: " ";
+				  .vngage-image-cancel-btn;
+				  right: 12px;
+				  top: 12px;
+				}
+				.menubutton {
+				  .vngage-menu-button;
+				  .vngage-no-shadow;
+				  &.vngage-btn-cancel {
+					color: #ba3f3f;
+					.vngageCancelBtn;
+				  }
+				}
+			  }
+			}
+  
+			/* Body content */
+			.vngage-panel-body {
+			  /* Queue body */
+			  position: absolute;
+			  top: 48px;
+			  bottom: 0;
+			  width: 100%;
+			  padding: 0;
+			  box-sizing: border-box;
+			  .vngage-inner-fullheight {
+				.vngage-panel-chat-container {
+				  .vngage-chat-list {
+					.user {
+					  &.server {
+						font-family: @fontRegular;
+						border: none;
+						padding: 12px 15px 12px 15px;
+						position: relative;
+						top: 34px;
+						font-size: 14px;
+						text-align: left;
+						line-height: 20px;
+						margin: 7px 50px 10px 12px;
+						width: 280px;
+						border-radius: 5px;
+						font-size: 14px;
+						letter-spacing: normal;
+						background-color: #e1edfe;
+						.vngageQueueMessage;
+						/* Queue hide btn*/
+						#btn-hide {
+						  display: none !important;
+						}
+						span {
+						  font-size: 14px;
+						  letter-spacing: normal;
+						  font-family: @fontRegular;
+						}
+						.vngage-queue-info {
+						  text-align: left;
+						  width: auto;
+						  display: flex;
+						  position: relative;
+						  top: 28px;
+						  left: 20px;
+						  .vngage-your-place-in-queue {
+							display: block;
+							width: auto;
+							height: 0;
+							font-size: 14px;
+							font-style: italic;
+							color: #7f7f7f;
+						  }
+						  #inqueue-display-new {
+							font-size: 14px;
+							letter-spacing: normal;
+							font-style: italic;
+							font-family: @fontRegular;
+							color: #7f7f7f;
+							display: block;
+							width: auto;
+							margin-left: 2px;
+							height: 0px;
+							@media @phone {
+							  top: 22px;
+							  right: 66px;
+							}
+						  }
+						}
+					  }
+					}
+				  }
+				  &:after {
+					content: "";
+					background-image: url("https://content.psplugin.com/images/8733B8BB-49D3-4187-B9D4-719BCC78C769/ani_progress_ring.gif");
+					background-repeat: no-repeat;
+					display: block;
+					background-size: 22px;
+					background-position: left;
+					width: 40px;
+					height: 40px;
+					position: relative;
+					top: 31px;
+					left: 14px;
+				  }
+				}
+				&:after {
+				  content: "";
+				  position: absolute;
+				  width: 100%;
+				  height: 80px;
+				  display: block;
+				  border-top: 1px solid #ccc;
+				  top: auto;
+				  bottom: 0px;
+				}
+			  }
+			  /* Indialog body */
+			  .chat-module {
+				.vngage-chat-list {
+				  &.videomode {
+					top: 227px;
+				  }
+				  bottom: 80px;
+				  .user {
+					border-radius: 5px;
+					margin: 7px 90px 10px 10px;
+					padding: 8px 14px;
+					border: none;
+					font-family: @fontRegular;
+					font-size: 14px;
+					letter-spacing: normal;
+					background-color: #e1edfe;
+					.vngageAgentMessage;
+					strong {
+					  font-family: @fontBold;
+					  font-size: 14px;
+					}
+					.dialog-navigate,
+					a {
+					  font-family: @fontRegular;
+					  background: none;
+					  border: none;
+					  padding: 0px;
+					  margin: 0px;
+					  font-size: 14px;
+					  text-decoration: underline;
+					  text-align: left;
+					  font-weight: normal;
+					}
+				  }
+				  .user:first-child {
+					margin-top: 34px;
+				  }
+				  .visitor {
+					border-radius: 5px;
+					margin: 7px 10px 10px 90px;
+					padding: 8px 14px;
+					border: none;
+					font-family: @fontRegular;
+					font-size: 14px;
+					letter-spacing: normal;
+					background-color: #f3f3f3;
+					.vngageVisitorMessage;
+					strong {
+					  font-family: @fontBold;
+					  font-size: 14px;
+					}
+				  }
+				  li {
+					margin: 7px 10px 0 0px;
+					padding: 8px 0px;
+					.user-typing {
+					  background-image: url("https://content.psplugin.com//images/8733B8BB-49D3-4187-B9D4-719BCC78C769/ani_typing.gif");
+					  width: 100%;
+					  height: 0px;
+					  background-size: 70px 70px;
+					  background-position: left;
+					}
+				  }
+				  /* Completed dialog buttons */
+				  .dialog-completedmessage {
+					.menubutton {
+					  .vngage-menu-button;
+					  .vngage-no-shadow;
+					  &.vngage-btn-cancel {
+						color: #ba3f3f;
+						.vngageCancelBtn;
+					  }
+					}
+				  }
+				}
+				.vngage-chat-list::-webkit-scrollbar {
+				  width: 0px !important;
+				  background: transparent !important;
+				}
+				#chat-input {
+				  display: -webkit-box;
+				  display: -ms-flexbox;
+				  display: -webkit-flex;
+				  display: flex;
+				  position: absolute;
+				  bottom: 0;
+				  width: 100%;
+				  padding-top: 0px;
+				  padding-bottom: 0px;
+				  box-sizing: border-box;
+				  padding-left: 0px;
+				  padding-right: 0px;
+  
+				  height: 80px;
+				  border-top: 1px solid #ccc;
+				  form {
+					flex-direction: row;
+					display: -webkit-box;
+					display: -ms-flexbox;
+					display: -webkit-flex;
+					display: flex;
+					width: 100%;
+					height: 80px;
+					/* height: 70px; */
+					.chat-textarea-container {
+					  display: -webkit-box;
+					  display: -ms-flexbox;
+					  display: -webkit-flex;
+					  display: flex;
+					  justify-content: space-between;
+					  flex-direction: row;
+					  width: 100%;
+					  flex: 2;
+					}
+					.chat-textarea {
+					  font-family: @fontRegular;
+					  padding: 11px 10px 0 10px;
+					  font-size: 16px;
+					  flex: 2;
+					  height: 80px;
+					  /* padding: 6px 10px 0px 10px; */
+					  /* font-size: 14px; */
+					  /* height: 70px; */
+					  .vngage-no-shadow;
+					  &::-webkit-input-placeholder {
+						font-family: @fontRegular;
+						font-size: 16px;
+						font-style: normal;
+						color:    #2D2926;
+					  }
+					  &::-moz-placeholder {
+						font-family: @fontRegular;
+						font-size: 16px;
+						font-style: normal;
+						color:    #2D2926;
+					  }
+					  &:-ms-input-placeholder {
+						font-family: @fontRegular;
+						font-size: 16px;
+						font-style: normal;
+						color:    #2D2926;
+					  }
+					  &:-moz-placeholder {
+						font-family: @fontRegular;
+						font-size: 16px;
+						font-style: normal;
+						color:    #2D2926;
+					  }
+					}
+					.wdt-emoji-picker {
+					  background-image: url(https://content.psplugin.com/images/01F78FC3-1DF9-4937-9865-E2C433BE33D9/emoji-picker-mongrel-icon.svg) !important;
+					  height: 48px;
+					  background-color: #F9F9F9;
+					  border-radius: 24px;
+					  background-size: 32px;
+					  width: 48px;
+					  border: 0;
+					  display: block;
+					  margin-left: 10px;
+					  margin-right: 5px;
+					  border-right: 1px solid #F2F2F2;
+					  /* &.wdt-emoji-picker-open {}*/ 
+					}
+					/* Indialog send button */
+					.chat-send-button {
+					  border: none;
+					  height: 80px;
+					  @media @desktop {
+						/* Will only read in desktop until ios but is fixed click*/
+						&:hover,
+						&:active,
+						&:focus {
+						  border: none;
+						  background: none;
+						}
+					  }
+					  .vngage-icon-ok {
+						background-image: url("https://content.psplugin.com//images/8733B8BB-49D3-4187-B9D4-719BCC78C769/ico_send.svg");
+						width: 100%;
+						height: 100%;
+						background-repeat: no-repeat;
+						background-position: center;
+						.vngage-default-animation;
+						@media @desktop {
+						  /* Will only read in desktop until ios but is fixed click*/
+						  &:hover {
+							transform: rotate(-45deg);
+							.vngage-default-animation;
+						  }
+						}
+						&:before {
+						  content: none;
+						}
+					  }
+					}
+				  }
+				}
+			  }
+			}
+			/* Power by vergic footer*/
+			.vngage-poweredby {
+			  width: 100%;
+			  text-align: center;
+			  right: auto;
+			  line-height: 10px;
+			  bottom: 2px;
+			  line-height: 10px;
+			}
+		  }
+		  .vngage-modal-container {
+			&.vngage-modal-container {
+			  &.vngage-ui {
+				background-color: #f3f3f3;
+				.vngage-centered {
+				  vertical-align: top;
+				  margin-top: 50px;
+				  transform: translateY(0px);
+				  /* Resumes dialog in another tab*/
+				  .dialog-tokenmismatch {
+					h3 {
+					  color: #000000;
+					}
+					p {
+					  color: #000000;
+					}
+					.vngage-btn-group {
+					  .vngage-btn-success {
+						.vngage-default-btn;
+					  }
+					}
+				  }
+				  .vngage-content-group {
+					#dialog-email-form {
+					  .form-group {
+						h3 {
+						  color: #000000;
+						}
+						/* Email Input field*/
+						.form-control {
+						}
+						.dialog-email {
+						  background-color: #ba3f3f;
+						}
+					  }
+					  .vngage-btn-group {
+						.dialog-send-email {
+						  .vngage-default-btn;
+						}
+						.vngage-btn-cancel {
+						  .vngage-image-cancel-btn;
+						  top: -50px;
+						  right: -6px;
+						}
+					  }
+					}
+					#dialog-emailsent-success {
+					  h3 {
+						color: #343434;
+						font-size: 14px;
+					  }
+					  .dialog-email-close {
+						.vngage-menu-button;
+						.vngage-no-shadow;
+						padding: 0px;
+						margin-bottom: 26px;
+						color: #ba3f3f;
+					  }
+					}
+				  }
+				}
+			  }
+			}
+		  }
+		}
+	  }
+	}
+  }
